@@ -47,8 +47,6 @@ function resizeEvent(){
     });
 
 
-
-
     $('#im0').attr({
         width: point1,
         height: point1,
