@@ -35,7 +35,7 @@
             <polygon points="0,0 100,0 50,100" fill="" id="poly2">
         </clipPath>
 
-<!--        <!-- Right Angle Triangle (Right) -->-->
+        <!-- Right Angle Triangle (Right) -->
         <clipPath id="clip3">
             <polygon points="50,0 50,100 0,100" fill="" id="poly3">
         </clipPath>
