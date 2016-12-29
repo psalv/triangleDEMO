@@ -19,13 +19,13 @@ function resizeEvent(){
     $('#im1').attr({
         width: point1,
         height: point1,
-        transform: "translate(" + (mid - 2*point2 - 2*space) + ", 0)"
+        transform: "translate(" + (mid - 2*(point2 + space)) + ", 0)"
     });
 
     $('#im2').attr({
         width: point1,
         height: point1,
-        transform: "translate(" + (mid - 1*point2 - 1*space) + ", 0)"
+        transform: "translate(" + (mid - 1*(point2 + space)) + ", 0)"
     });
 
     $('#im3').attr({
@@ -37,36 +37,46 @@ function resizeEvent(){
     $('#im4').attr({
         width: point1,
         height: point1,
-        transform: "translate(" + (mid + 1*point2 + 1*space) + ", 0)"
+        transform: "translate(" + (mid + 1*(point2 + space)) + ", 0)"
     });
 
     $('#im5').attr({
         width: point1,
         height: point1,
-        transform: "translate(" + (mid + 2*point2 + 2*space) + ", 0)"
+        transform: "translate(" + (mid + 2*(point2 + space)) + ", 0)"
     });
 
-    /*
-     <polygon points="0,0 100,200 200,0" fill="" id="poly3">
-     <clipPath id="clip4">
-     <polygon points="200,200 0,200 100,200" fill="" id="poly4">
-     */
+
+
+
+    $('#im0').attr({
+        width: point1,
+        height: point1,
+        transform: "translate(" + (mid - 3*(point2 + space)) + ", 0)"
+    });
+
+    $('#im6').attr({
+        width: point1,
+        height: point1,
+        transform: "translate(" + (mid + 3*(point2 + space)) + ", 0)"
+    });
+
 
     // Right angle triangles
-    // $('#poly3').attr('points', "0,0 " + point2 + "," + point1 + " " + point1 + ",0");
-    // $('#poly4').attr('points', point1 + "," + point1 + " 0," + point1 + " " + point2 + "," + point1);
-    //
-    // $('#im0').attr({
-    //     width: point1,
-    //     height: point1,
-    //     transform: "translate(" + (mid - 3*point2 - 3*space) + ", 0)"   // left end
-    // });
-    //
-    // $('#im6').attr({
-    //     width: point1,
-    //     height: point1,
-    //     transform: "translate(" + (mid + 3*point2 + 3*space) + ", 0)"   // right end
-    // });
+    $('#poly3').attr('points', point2 + ",0 " + point2 + "," + point1 + " " + point1 + "," + point1);
+    $('#poly4').attr('points', point2 + ",0 " + point2 + "," + point1 + " 0," + point1);
+
+    $('#imL1').attr({
+        width: point1,
+        height: point1,
+        transform: "translate(" + (mid - 4*(point2 + space)) + ", 0)"   // left end
+    });
+
+    $('#imR1').attr({
+        width: point1,
+        height: point1,
+        transform: "translate(" + (mid + 4*(point2 + space)) + ", 0)"   // right end
+    });
 }
 
 $(function jQueryResize (){
