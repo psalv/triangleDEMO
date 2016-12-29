@@ -25,6 +25,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="200" id="svg1">
     <defs>
 
+        <!-- 
+             The numbers represented in the points are just placeholders to show the proportions required for these shapes.
+             Since the js file immediately initiates a resize event, these will be overwritten when the page is loaded.
+        -->
+        
         <!-- Equilateral Triangle -->
         <clipPath id="clip1">
             <polygon points="50,0 0,100 100,100" fill="" id="poly1">  <!-- Coordinate system is x,y with 0,0 being the top left corner -->
