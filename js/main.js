@@ -53,20 +53,20 @@ function resizeEvent(){
      */
 
     // Right angle triangles
-    $('#poly3').attr('points', "0,0 " + point2 + "," + point1 + " " + point1 + ",0");
-    $('#poly4').attr('points', point1 + "," + point1 + " 0," + point1 + " " + point2 + "," + point1);
-
-    $('#im0').attr({
-        width: point1,
-        height: point1,
-        transform: "translate(" + (mid - 3*point2 - 3*space) + ", 0)"   // left end
-    });
-
-    $('#im6').attr({
-        width: point1,
-        height: point1,
-        transform: "translate(" + (mid + 3*point2 + 3*space) + ", 0)"   // right end
-    });
+    // $('#poly3').attr('points', "0,0 " + point2 + "," + point1 + " " + point1 + ",0");
+    // $('#poly4').attr('points', point1 + "," + point1 + " 0," + point1 + " " + point2 + "," + point1);
+    //
+    // $('#im0').attr({
+    //     width: point1,
+    //     height: point1,
+    //     transform: "translate(" + (mid - 3*point2 - 3*space) + ", 0)"   // left end
+    // });
+    //
+    // $('#im6').attr({
+    //     width: point1,
+    //     height: point1,
+    //     transform: "translate(" + (mid + 3*point2 + 3*space) + ", 0)"   // right end
+    // });
 }
 
 $(function jQueryResize (){
